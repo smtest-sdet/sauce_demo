@@ -1,10 +1,7 @@
-from fixtures.conftest import page
 from pages.base_page import BasePage
 from  playwright.sync_api import  Page ,expect
 
 class CartPage(BasePage):
-
-
     def navigate_to_cart(self):
         self.page.locator('[data-test="shopping-cart-link"]').click()
 
