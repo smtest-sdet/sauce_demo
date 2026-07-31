@@ -1,3 +1,5 @@
 .idea/
 .venv/
-reports/
+
+pages__pychache__
+tests/__pycache__
