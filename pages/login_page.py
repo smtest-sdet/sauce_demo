@@ -5,6 +5,8 @@ class LoginPage(BasePage):
     usernamefield = "#user-name"
     passwordfield = "#password"
     submit_button = "#login-button"
+    valid_creds = "#login_credentials"
+    valid_password =".login_password"
 
 
     def enter_username(self,username):
@@ -22,12 +24,11 @@ class LoginPage(BasePage):
         self.enter_username(username)
         self.enter_password(password)
         self.click_login()
-        self.page.wait_for_url("https://www.saucedemo.com/inventory.html")
 
     def get_valid_username(self):
-        valid_username = self.page.locator("#login_credentials").inner_text().split("\n")[1]
+        valid_username = self.page.locator(self.valid_creds).inner_text().split("\n")[1]
         return valid_username
 
     def get_valid_password(self):
-        valid_password = self.page.locator(".login_password").inner_text().split("\n")[1]
+        valid_password = self.page.locator(self.valid_password).inner_text().split("\n")[1]
         return valid_password

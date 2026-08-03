@@ -1,0 +1,9 @@
+{
+  "base_url": "https://www.saucedemo.com/",
+  "product1": "Sauce Labs Bolt T-Shirt",
+  "product2": "Sauce Labs Fleece Jacket",
+  "first_name": "test",
+  "last_name": "user",
+  "postal_code": "411045",
+  "not_equal_msg": "Total price  is not greater than item price "
+}
